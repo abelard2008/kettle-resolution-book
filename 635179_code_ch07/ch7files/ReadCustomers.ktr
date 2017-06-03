@@ -7,7 +7,7 @@
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>&#47;Ch07</directory>
+    <directory>&#x2f;</directory>
     <parameters>
     </parameters>
     <log>
@@ -17,7 +17,7 @@
 <size_limit_lines/>
 <interval>5</interval>
 <timeout_days/>
-<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
 <perf-log-table><connection/>
 <schema/>
 <table/>
@@ -34,6 +34,11 @@
 <table/>
 <timeout_days/>
 <field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
     </log>
     <maxdate>
       <connection/>
@@ -61,113 +66,24 @@
     </slaveservers>
     <clusterschemas>
     </clusterschemas>
+  <created_user/>
+  <created_date>2017&#x2f;06&#x2f;03 21&#x3a;26&#x3a;43.984</created_date>
   <modified_user>admin</modified_user>
-  <modified_date>2010&#47;07&#47;19 06:15:10.000</modified_date>
+  <modified_date>2010&#x2f;07&#x2f;19 06&#x3a;15&#x3a;10.000</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
+    <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
   <connection>
-    <name>Foodmart</name>
-    <server>10.0.0.65</server>
-    <type>MYSQL</type>
-    <access>Native</access>
-    <database>foodmart</database>
-    <port>3306</port>
-    <username>foodmart</username>
-    <password>Encrypted 2be98afc86aa7f2e4ad16a174d393bdce</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
-      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>STREAM_RESULTS</code><attribute>N</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
-  <connection>
-    <name>PaloDemo</name>
-    <server>10.0.0.71</server>
-    <type>PALO</type>
-    <access>Plugin</access>
-    <database>Demo</database>
-    <port>7778</port>
-    <username>admin</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb79ce71da9fa6d4</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>7778</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
-  <connection>
-    <name>PaloTest</name>
-    <server>10.0.0.71</server>
-    <type>PALO</type>
-    <access>Plugin</access>
-    <database>Demo</database>
-    <port>7778</port>
-    <username>admin</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb79ce71da9fa6d4</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>7778</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
-  <connection>
-    <name>sakila</name>
-    <server>10.0.0.169</server>
-    <type>MYSQL</type>
-    <access>Native</access>
-    <database>sakila</database>
-    <port>3306</port>
-    <username>root</username>
-    <password>Encrypted 2be98afc86aa7f2e49f11a17cd7819082</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
-      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
-  <connection>
     <name>sakila_dwh</name>
-    <server>localhost</server>
+    <server>192.168.80.103</server>
     <type>MYSQL</type>
     <access>Native</access>
     <database>sakila_dwh</database>
     <port>3306</port>
     <username>sakila_dwh</username>
-    <password>Encrypted 2be98afc86aa78185a010a271e196b8d2</password>
+    <password>Encrypted 2be98afc86aa7b380a610a03e8ac7f78d</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -178,87 +94,25 @@
       <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
       <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
       <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
       <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
       <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
       <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
-  <connection>
-    <name>sakila_stg</name>
-    <server>localhost</server>
-    <type>MYSQL</type>
-    <access>Native</access>
-    <database>sakila_stg</database>
-    <port>3306</port>
-    <username>root</username>
-    <password>Encrypted 2be98afc86aa7f2e49f11a17cd7819082</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
-      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>N</attribute></attribute>
       <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
     </attributes>
   </connection>
   <order>
-  <hop> <from>WebData</from><to>GenderLookup</to><enabled>Y</enabled> </hop>  <hop> <from>GenderLookup</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>Preview</to><enabled>Y</enabled> </hop>  </order>
-  <step>
-    <name>GenderLookup</name>
-    <type>Mapping</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <specification_method>rep_ref</specification_method>
-    <trans_object_id>23</trans_object_id>
-    <trans_name/>
-    <filename/>
-    <directory_path/>
-    <mappings>
-      <input>
-    <mapping>    <input_step/>
-    <output_step/>
-    <main_path>N</main_path>
-    <rename_on_output>N</rename_on_output>
-    <description/>
-       <connector><parent>Gender</parent><child>src_code</child></connector>
-    </mapping>      </input>
-      <output>
-    <mapping>    <input_step/>
-    <output_step/>
-    <main_path>N</main_path>
-    <rename_on_output>N</rename_on_output>
-    <description/>
-    </mapping>      </output>
-          <parameters>       <variablemapping><variable>src_system</variable><input>Web</input></variablemapping>
-    <inherit_all_vars>N</inherit_all_vars>
-    </parameters>
-    </mappings>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>182</xloc>
-      <yloc>55</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
+  <hop> <from>Select values</from><to>Preview</to><enabled>Y</enabled> </hop>
+  <hop> <from>WebData</from><to>Mapping &#x28;sub-transformation&#x29;</to><enabled>Y</enabled> </hop>
+  <hop> <from>Mapping &#x28;sub-transformation&#x29;</from><to>Select values</to><enabled>Y</enabled> </hop>
+  </order>
   <step>
     <name>Preview</name>
     <type>Dummy</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -277,6 +131,7 @@
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -286,7 +141,7 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>src_code</name>
+      </field>      <field>        <name>Gender</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
@@ -308,29 +163,31 @@
     <type>CsvInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <filename>&#47;media&#47;NIXDATA&#47;Boek2&#47;Chapter 6 Data Extraction&#47;Files&#47;custfile1.txt</filename>
+    <filename>&#x2f;Volumes&#x2f;develop&#x2f;kettle&#x2f;kettle-resolution-book&#x2f;635179_code_ch06&#x2f;ch6files&#x2f;custfile1.txt</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
-    <separator>|</separator>
+    <separator>&#x7c;</separator>
     <enclosure/>
     <header>Y</header>
     <buffer_size>50000</buffer_size>
     <lazy_conversion>Y</lazy_conversion>
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
+    <newline_possible>Y</newline_possible>
     <encoding/>
     <fields>
       <field>
         <name>Number</name>
         <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>15</length>
@@ -341,7 +198,7 @@
         <name>Gender</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>6</length>
@@ -352,7 +209,7 @@
         <name>GivenName</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>10</length>
@@ -363,7 +220,7 @@
         <name>MiddleInitial</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>1</length>
@@ -374,7 +231,7 @@
         <name>Surname</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>12</length>
@@ -385,7 +242,7 @@
         <name>StreetAddress</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>24</length>
@@ -396,7 +253,7 @@
         <name>City</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>22</length>
@@ -407,7 +264,7 @@
         <name>State</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>2</length>
@@ -418,7 +275,7 @@
         <name>ZipCode</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>5</length>
@@ -429,7 +286,7 @@
         <name>Country</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>2</length>
@@ -440,7 +297,7 @@
         <name>EmailAddress</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>35</length>
@@ -451,7 +308,7 @@
         <name>Password</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>13</length>
@@ -462,7 +319,7 @@
         <name>TelephoneNumber</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>12</length>
@@ -473,7 +330,7 @@
         <name>MothersMaiden</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>11</length>
@@ -484,7 +341,7 @@
         <name>Birthday</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>10</length>
@@ -495,7 +352,7 @@
         <name>CCType</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>10</length>
@@ -505,8 +362,8 @@
       <field>
         <name>CCNumber</name>
         <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>15</length>
@@ -517,7 +374,7 @@
         <name>CVV2</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>3</length>
@@ -528,7 +385,7 @@
         <name>CCExpires</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>7</length>
@@ -539,7 +396,7 @@
         <name>NationalID</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>11</length>
@@ -550,7 +407,7 @@
         <name>UPS</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>24</length>
@@ -561,7 +418,7 @@
         <name>Occupation</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>51</length>
@@ -572,7 +429,7 @@
         <name>Domain</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <length>25</length>
@@ -582,8 +439,53 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>20</xloc>
-      <yloc>55</yloc>
+      <xloc>16</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Mapping &#x28;sub-transformation&#x29;</name>
+    <type>Mapping</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <specification_method>filename</specification_method>
+    <trans_object_id/>
+    <trans_name/>
+    <filename>&#x2f;&#x2f;&#x2f;Volumes&#x2f;develop&#x2f;kettle&#x2f;kettle-resolution-book&#x2f;635179_code_ch07&#x2f;ch7files&#x2f;GenderLookupMapping.ktr</filename>
+    <directory_path/>
+    <mappings>
+      <input>
+    <mapping>    <input_step/>
+    <output_step/>
+    <main_path>Y</main_path>
+    <rename_on_output>Y</rename_on_output>
+    <description/>
+    </mapping>      </input>
+      <output>
+    <mapping>    <input_step/>
+    <output_step/>
+    <main_path>Y</main_path>
+    <rename_on_output>N</rename_on_output>
+    <description/>
+    </mapping>      </output>
+          <parameters>       <variablemapping><variable>src_system</variable><input/></variablemapping>
+    <inherit_all_vars>Y</inherit_all_vars>
+    </parameters>
+    </mappings>
+    <allow_multiple_input>N</allow_multiple_input>
+    <allow_multiple_output>N</allow_multiple_output>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>144</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -593,4 +495,5 @@
    <slave-step-copy-partition-distribution>
 </slave-step-copy-partition-distribution>
    <slave_transformation>N</slave_transformation>
+
 </transformation>
