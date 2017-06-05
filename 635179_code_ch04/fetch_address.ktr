@@ -437,7 +437,7 @@
   </notepads>
   <connection>
     <name>sakila</name>
-    <server>localhost</server>
+    <server>192.168.80.103</server>
     <type>MYSQL</type>
     <access>Native</access>
     <database>sakila</database>
@@ -544,7 +544,7 @@
       <schema_name />
     </partitioning>
     <compatible>Y</compatible>
-    <optimizationLevel />
+    <optimizationLevel>9</optimizationLevel>
     <jsScripts>
       <jsScript>
         <jsScript_type>0</jsScript_type>
@@ -598,8 +598,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>58</xloc>
-      <yloc>42</yloc>
+      <xloc>48</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -709,8 +709,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>163</xloc>
-      <yloc>42</yloc>
+      <xloc>160</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

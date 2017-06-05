@@ -523,7 +523,7 @@
   </notepads>
   <connection>
     <name>sakila</name>
-    <server>localhost</server>
+    <server>192.168.80.103</server>
     <type>MYSQL</type>
     <access>Native</access>
     <database>sakila</database>
@@ -578,7 +578,7 @@
   </connection>
   <connection>
     <name>sakila_dwh</name>
-    <server>localhost</server>
+    <server>192.168.80.103</server>
     <type>MYSQL</type>
     <access>Native</access>
     <database>sakila_dwh</database>
@@ -740,8 +740,8 @@ WHERE last_update > ?
         <inherit_all_vars>N</inherit_all_vars>
       </parameters>
     </mappings>
-    <allow_multiple_input>N</allow_multiple_input>
-    <allow_multiple_output>N</allow_multiple_output>
+    <allow_multiple_input>Y</allow_multiple_input>
+    <allow_multiple_output>Y</allow_multiple_output>
     <cluster_schema />
     <remotesteps>
       <input>
@@ -750,8 +750,8 @@ WHERE last_update > ?
       </output>
     </remotesteps>
     <GUI>
-      <xloc>299</xloc>
-      <yloc>181</yloc>
+      <xloc>288</xloc>
+      <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -978,8 +978,8 @@ FROM dim_customer
       </output>
     </remotesteps>
     <GUI>
-      <xloc>298</xloc>
-      <yloc>4</yloc>
+      <xloc>192</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

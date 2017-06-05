@@ -1,0 +1,7 @@
+adate|productname|items|amount
+01-01-2010|Kettle|3|1245
+28-02-2010|Informatic|1|22341
+3-4-2001|Talend|12|3.21
+31-03-1200|OWB|2|3321
+3-3-2009|CloverETL|33214|33452.321
+13-05-2010|Octopus|1|10
