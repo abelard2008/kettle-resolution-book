@@ -1,0 +1,21 @@
+year|quarter|store_type|unit_sales|store_sales
+1997|Q1|Deluxe Supermarket|20977.0|43864.84
+1997|Q1|Gourmet Supermarket|3822.0|8203.89
+1997|Q1|Mid-Size Grocery|3096.0|6439.32
+1997|Q1|Small Grocery|1457.0|3037.78
+1997|Q1|Supermarket|36939.0|78082.52
+1997|Q2|Deluxe Supermarket|16371.0|34486.06
+1997|Q2|Gourmet Supermarket|5837.0|12597.15
+1997|Q2|Mid-Size Grocery|2860.0|6051.57
+1997|Q2|Small Grocery|1588.0|3337.2
+1997|Q2|Supermarket|35954.0|76194.29
+1997|Q3|Deluxe Supermarket|20231.0|42829.35
+1997|Q3|Gourmet Supermarket|4724.0|10108.72
+1997|Q3|Mid-Size Grocery|2450.0|5253.5
+1997|Q3|Small Grocery|1563.0|3373.81
+1997|Q3|Supermarket|36880.0|78706.51
+1997|Q4|Deluxe Supermarket|19258.0|40881.99
+1997|Q4|Gourmet Supermarket|6950.0|14840.48
+1997|Q4|Mid-Size Grocery|3085.0|6584.84
+1997|Q4|Small Grocery|1949.0|4137.59
+1997|Q4|Supermarket|40782.0|86226.72
