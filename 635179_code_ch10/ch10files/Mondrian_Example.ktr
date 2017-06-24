@@ -516,7 +516,7 @@
   </notepads>
   <connection>
     <name>Foodmart</name>
-    <server>192.168.80.103</server>
+    <server>192.168.80.102</server>
     <type>MYSQL</type>
     <access>Native</access>
     <database>foodmart</database>
@@ -633,6 +633,11 @@
       <to>Text file output</to>
       <enabled>Y</enabled>
     </hop>
+    <hop>
+      <from>Text file input</from>
+      <to>Hadoop File Output</to>
+      <enabled>Y</enabled>
+    </hop>
   </order>
   <step>
     <name>EmptyRows</name>
@@ -698,6 +703,179 @@
     <GUI>
       <xloc>736</xloc>
       <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter rows 2</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Text file output</send_true_to>
+    <send_false_to />
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>store_type</leftvalue>
+        <function>&lt;></function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>HeadQuarters</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>592</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Hadoop File Output</name>
+    <type>HadoopFileOutputPlugin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>hdfs://192.168.80.102:9000</name>
+      <source_configuration_name>test-hdfs</source_configuration_name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+    </fields>
+    <NamedCluster>
+      <child>
+        <id>hdfsPassword</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>lastModifiedDate</id>
+        <value>1498260644681</value>
+        <type>String</type>
+      </child>
+      <child>
+        <id>mapr</id>
+        <value>false</value>
+        <type>String</type>
+      </child>
+      <child>
+        <id>oozieUrl</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>jobTrackerHost</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>zooKeeperHost</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>shimIdentifier</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>jobTrackerPort</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>zooKeeperPort</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>hdfsPort</id>
+        <value>9000</value>
+        <type>String</type>
+      </child>
+      <child>
+        <id>name</id>
+        <value>test-hdfs</value>
+        <type>String</type>
+      </child>
+      <child>
+        <id>hdfsUsername</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>storageScheme</id>
+        <value>hdfs</value>
+        <type>String</type>
+      </child>
+      <child>
+        <id>hdfsHost</id>
+        <value>192.168.80.102</value>
+        <type>String</type>
+      </child>
+    </NamedCluster>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1099,49 +1277,6 @@ from [Sales]</sql>
     </GUI>
   </step>
   <step>
-    <name>Filter rows 2</name>
-    <type>FilterRows</type>
-    <description />
-    <distribute>Y</distribute>
-    <custom_distribution />
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name />
-    </partitioning>
-    <send_true_to>Text file output</send_true_to>
-    <send_false_to />
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <leftvalue>store_type</leftvalue>
-        <function>&lt;></function>
-        <rightvalue />
-        <value>
-          <name>constant</name>
-          <type>String</type>
-          <text>HeadQuarters</text>
-          <length>-1</length>
-          <precision>-1</precision>
-          <isnull>N</isnull>
-          <mask />
-        </value>
-      </condition>
-    </compare>
-    <cluster_schema />
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>592</xloc>
-      <yloc>448</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
     <name>Text file output</name>
     <type>TextFileOutput</type>
     <description />
@@ -1255,6 +1390,95 @@ from [Sales]</sql>
     <GUI>
       <xloc>784</xloc>
       <yloc>416</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Text file input</name>
+    <type>TextFileInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <accept_filenames>N</accept_filenames>
+    <passing_through_fields>N</passing_through_fields>
+    <accept_field />
+    <accept_stepname />
+    <separator>|</separator>
+    <enclosure>"</enclosure>
+    <enclosure_breaks>N</enclosure_breaks>
+    <escapechar />
+    <header>Y</header>
+    <nr_headerlines>1</nr_headerlines>
+    <footer>N</footer>
+    <nr_footerlines>1</nr_footerlines>
+    <line_wrapped>N</line_wrapped>
+    <nr_wraps>1</nr_wraps>
+    <layout_paged>N</layout_paged>
+    <nr_lines_per_page>80</nr_lines_per_page>
+    <nr_lines_doc_header>0</nr_lines_doc_header>
+    <noempty>Y</noempty>
+    <include>N</include>
+    <include_field />
+    <rownum>N</rownum>
+    <rownumByFile>N</rownumByFile>
+    <rownum_field />
+    <format>DOS</format>
+    <encoding />
+    <length>Characters</length>
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <file>
+      <name>/Volumes/develop/kettle/kettle-resolution-book/635179_code_ch06/ch6files/custfile1.txt</name>
+      <filemask />
+      <exclude_filemask />
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <type>CSV</type>
+      <compression>None</compression>
+    </file>
+    <filters>
+    </filters>
+    <fields>
+    </fields>
+    <limit>0</limit>
+    <error_ignored>N</error_ignored>
+    <skip_bad_files>N</skip_bad_files>
+    <file_error_field />
+    <file_error_message_field />
+    <error_line_skipped>N</error_line_skipped>
+    <error_count_field />
+    <error_fields_field />
+    <error_text_field />
+    <bad_line_files_destination_directory />
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory />
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory />
+    <line_number_files_extension>line</line_number_files_extension>
+    <date_format_lenient>Y</date_format_lenient>
+    <date_format_locale>en_US</date_format_locale>
+    <shortFileFieldName />
+    <pathFieldName />
+    <hiddenFieldName />
+    <lastModificationTimeFieldName />
+    <uriNameFieldName />
+    <rootUriNameFieldName />
+    <extensionFieldName />
+    <sizeFieldName />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

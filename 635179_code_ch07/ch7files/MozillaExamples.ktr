@@ -817,8 +817,8 @@ valid URLs we are interested in</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>750</xloc>
-      <yloc>150</yloc>
+      <xloc>992</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -855,8 +855,8 @@ valid URLs we are interested in</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>450</xloc>
-      <yloc>150</yloc>
+      <xloc>544</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -893,8 +893,8 @@ valid URLs we are interested in</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>350</xloc>
-      <yloc>50</yloc>
+      <xloc>384</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -947,8 +947,8 @@ valid URLs we are interested in</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>250</xloc>
-      <yloc>50</yloc>
+      <xloc>288</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1001,8 +1001,8 @@ valid URLs we are interested in</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>550</xloc>
-      <yloc>50</yloc>
+      <xloc>704</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1025,8 +1025,8 @@ valid URLs we are interested in</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>850</xloc>
-      <yloc>50</yloc>
+      <xloc>1088</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1333,8 +1333,8 @@ valid URLs we are interested in</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>250</xloc>
-      <yloc>150</yloc>
+      <xloc>256</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1367,8 +1367,8 @@ valid URLs we are interested in</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>350</xloc>
-      <yloc>150</yloc>
+      <xloc>384</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1416,8 +1416,8 @@ valid URLs we are interested in</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>352</xloc>
-      <yloc>592</yloc>
+      <xloc>464</xloc>
+      <yloc>496</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1586,8 +1586,8 @@ valid URLs we are interested in</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>650</xloc>
-      <yloc>150</yloc>
+      <xloc>880</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1629,8 +1629,8 @@ valid URLs we are interested in</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>864</xloc>
-      <yloc>592</yloc>
+      <xloc>1024</xloc>
+      <yloc>576</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1672,8 +1672,8 @@ valid URLs we are interested in</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>550</xloc>
-      <yloc>150</yloc>
+      <xloc>720</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1704,7 +1704,7 @@ valid URLs we are interested in</note>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>240</xloc>
+      <xloc>256</xloc>
       <yloc>688</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1828,8 +1828,8 @@ $</script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>640</xloc>
-      <yloc>688</yloc>
+      <xloc>720</xloc>
+      <yloc>720</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1914,8 +1914,8 @@ if (str2RegExp(product_locale.getString(), "^None|all|[a-z]{2}(?>-[A-Za-z]{2}(?>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>150</xloc>
-      <yloc>50</yloc>
+      <xloc>176</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2074,8 +2074,8 @@ if (str2RegExp(product_locale.getString(), "^None|all|[a-z]{2}(?>-[A-Za-z]{2}(?>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>864</xloc>
-      <yloc>688</yloc>
+      <xloc>1088</xloc>
+      <yloc>720</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2248,8 +2248,8 @@ if (str2RegExp(product_locale.getString(), "^None|all|[a-z]{2}(?>-[A-Za-z]{2}(?>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>850</xloc>
-      <yloc>150</yloc>
+      <xloc>1136</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2666,8 +2666,8 @@ $</script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>768</xloc>
-      <yloc>688</yloc>
+      <xloc>880</xloc>
+      <yloc>720</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2708,8 +2708,8 @@ $</script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>750</xloc>
-      <yloc>50</yloc>
+      <xloc>960</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2734,8 +2734,8 @@ $</script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>950</xloc>
-      <yloc>150</yloc>
+      <xloc>1280</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2775,8 +2775,8 @@ $</script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>650</xloc>
-      <yloc>50</yloc>
+      <xloc>832</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2848,8 +2848,8 @@ $</script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>450</xloc>
-      <yloc>50</yloc>
+      <xloc>544</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3101,8 +3101,8 @@ $</script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>240</xloc>
-      <yloc>592</yloc>
+      <xloc>256</xloc>
+      <yloc>560</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3153,8 +3153,8 @@ $</script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>640</xloc>
-      <yloc>592</yloc>
+      <xloc>704</xloc>
+      <yloc>528</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3361,8 +3361,8 @@ $</script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>352</xloc>
-      <yloc>704</yloc>
+      <xloc>384</xloc>
+      <yloc>720</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3393,8 +3393,8 @@ $</script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>496</xloc>
-      <yloc>688</yloc>
+      <xloc>560</xloc>
+      <yloc>720</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3554,7 +3554,7 @@ $</script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>816</xloc>
+      <xloc>944</xloc>
       <yloc>640</yloc>
       <draw>Y</draw>
     </GUI>
