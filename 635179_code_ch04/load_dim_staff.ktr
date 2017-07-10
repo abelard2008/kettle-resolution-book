@@ -523,7 +523,7 @@
   </notepads>
   <connection>
     <name>sakila</name>
-    <server>localhost</server>
+    <server>192.168.90.203</server>
     <type>MYSQL</type>
     <access>Native</access>
     <database>sakila</database>
@@ -578,7 +578,7 @@
   </connection>
   <connection>
     <name>sakila_dwh</name>
-    <server>localhost</server>
+    <server>192.168.90.203</server>
     <type>MYSQL</type>
     <access>Native</access>
     <database>sakila_dwh</database>
